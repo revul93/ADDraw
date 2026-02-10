@@ -1,0 +1,60 @@
+.diagram-type-card {
+  background-color: white;
+  border: 2px solid #e0e0e0;
+  border-radius: 8px;
+  padding: 20px;
+  cursor: pointer;
+  transition: all 0.2s;
+}
+
+.diagram-type-card:hover {
+  border-color: #4285F4;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+.diagram-type-card.selected {
+  border-color: #4285F4;
+  background-color: #f0f7ff;
+}
+
+.card-header {
+  display: flex;
+  align-items: center;
+  margin-bottom: 12px;
+}
+
+.card-header input[type="checkbox"] {
+  margin-right: 12px;
+  width: 20px;
+  height: 20px;
+  cursor: pointer;
+}
+
+.card-header h3 {
+  margin: 0;
+  color: #333;
+  font-size: 18px;
+}
+
+.card-description {
+  color: #666;
+  margin: 0 0 12px 32px;
+  line-height: 1.5;
+}
+
+.card-type-badge {
+  display: inline-block;
+  margin-left: 32px;
+  padding: 4px 12px;
+  background-color: #e8eaed;
+  color: #5f6368;
+  border-radius: 12px;
+  font-size: 12px;
+  font-weight: 500;
+  text-transform: uppercase;
+}
+
+.diagram-type-card.selected .card-type-badge {
+  background-color: #4285F4;
+  color: white;
+}

@@ -1,0 +1,33 @@
+.export-button {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  background-color: #4285F4;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 4px;
+  font-size: 14px;
+  font-weight: 500;
+  cursor: pointer;
+  transition: all 0.2s;
+}
+
+.export-button:hover:not(:disabled) {
+  background-color: #357AE8;
+  transform: translateY(-2px);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.export-button:disabled {
+  background-color: #ccc;
+  cursor: not-allowed;
+}
+
+.export-icon {
+  font-size: 18px;
+}
+
+.export-label {
+  font-weight: 600;
+}
