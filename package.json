@@ -14,7 +14,13 @@
     "type": "git",
     "url": "git+https://github.com/revul93/ADDraw.git"
   },
-  "keywords": ["active-directory", "ldap", "visualization", "topology", "diagram"],
+  "keywords": [
+    "active-directory",
+    "ldap",
+    "visualization",
+    "topology",
+    "diagram"
+  ],
   "author": "",
   "license": "ISC",
   "bugs": {
@@ -22,23 +28,23 @@
   },
   "homepage": "https://github.com/revul93/ADDraw#readme",
   "dependencies": {
-    "react": "^18.2.0",
-    "react-dom": "^18.2.0",
-    "d3": "^7.8.5",
-    "ldapjs": "^3.0.7",
-    "jspdf": "^2.5.1",
-    "html2canvas": "^1.4.1",
     "cytoscape": "^3.28.1",
-    "cytoscape-dagre": "^2.5.0"
+    "cytoscape-dagre": "^2.5.0",
+    "d3": "^7.8.5",
+    "html2canvas": "^1.4.1",
+    "jspdf": "^4.1.0",
+    "ldapjs": "^3.0.7",
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0"
   },
   "devDependencies": {
     "@types/react": "^18.2.43",
     "@types/react-dom": "^18.2.17",
     "@vitejs/plugin-react": "^4.2.1",
-    "vite": "^5.0.8",
     "eslint": "^8.55.0",
     "eslint-plugin-react": "^7.33.2",
     "eslint-plugin-react-hooks": "^4.6.0",
-    "prettier": "^3.1.1"
+    "prettier": "^3.1.1",
+    "vite": "^5.0.8"
   }
 }

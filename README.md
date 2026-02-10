@@ -132,7 +132,7 @@ ADDraw/
 - **React 18.x** - UI framework
 - **Vite** - Build tool and dev server
 - **Cytoscape.js** - Graph visualization library
-- **jsPDF** - PDF generation
+- **jsPDF 4.x** - PDF generation
 - **html2canvas** - Canvas-based rendering
 - **ldapjs** - LDAP client (with browser limitations)
 
