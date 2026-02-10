@@ -1,0 +1,72 @@
+.diagram-selector-container {
+  max-width: 1200px;
+  margin: 40px auto;
+  padding: 30px;
+}
+
+.diagram-selector-container h2 {
+  color: #333;
+  text-align: center;
+  margin-top: 0;
+}
+
+.selector-description {
+  color: #666;
+  text-align: center;
+  margin-bottom: 30px;
+  line-height: 1.5;
+}
+
+.select-all-container {
+  margin-bottom: 30px;
+  text-align: center;
+}
+
+.select-all-container label {
+  display: inline-flex;
+  align-items: center;
+  font-size: 16px;
+  cursor: pointer;
+  padding: 10px 20px;
+  background-color: #f8f9fa;
+  border-radius: 4px;
+}
+
+.select-all-container input[type="checkbox"] {
+  margin-right: 10px;
+  width: 18px;
+  height: 18px;
+  cursor: pointer;
+}
+
+.diagram-types-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 20px;
+  margin-bottom: 40px;
+}
+
+.selector-actions {
+  text-align: center;
+}
+
+.generate-button {
+  background-color: #4285F4;
+  color: white;
+  border: none;
+  padding: 14px 40px;
+  border-radius: 4px;
+  font-size: 18px;
+  font-weight: 500;
+  cursor: pointer;
+  transition: background-color 0.2s;
+}
+
+.generate-button:hover:not(:disabled) {
+  background-color: #357AE8;
+}
+
+.generate-button:disabled {
+  background-color: #ccc;
+  cursor: not-allowed;
+}

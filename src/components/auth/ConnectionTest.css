@@ -1,0 +1,109 @@
+.connection-test-container {
+  max-width: 600px;
+  margin: 20px auto;
+  padding: 30px;
+  background-color: white;
+  border-radius: 8px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+.connection-test-container h3 {
+  margin-top: 0;
+  color: #333;
+  text-align: center;
+}
+
+.test-button {
+  display: block;
+  width: 100%;
+  background-color: #34A853;
+  color: white;
+  border: none;
+  padding: 12px 24px;
+  border-radius: 4px;
+  font-size: 16px;
+  font-weight: 500;
+  cursor: pointer;
+  transition: background-color 0.2s;
+  margin-bottom: 20px;
+}
+
+.test-button:hover:not(:disabled) {
+  background-color: #2D8E47;
+}
+
+.test-button:disabled {
+  background-color: #ccc;
+  cursor: not-allowed;
+}
+
+.test-result {
+  display: flex;
+  align-items: flex-start;
+  padding: 16px;
+  border-radius: 4px;
+  margin-bottom: 20px;
+}
+
+.test-result.success {
+  background-color: #e8f5e9;
+  border: 1px solid #4caf50;
+}
+
+.test-result.error {
+  background-color: #ffebee;
+  border: 1px solid #f44336;
+}
+
+.result-icon {
+  font-size: 24px;
+  margin-right: 12px;
+  font-weight: bold;
+}
+
+.test-result.success .result-icon {
+  color: #4caf50;
+}
+
+.test-result.error .result-icon {
+  color: #f44336;
+}
+
+.result-content {
+  flex: 1;
+}
+
+.result-content strong {
+  display: block;
+  margin-bottom: 4px;
+  font-size: 16px;
+}
+
+.result-content p {
+  margin: 4px 0;
+  color: #666;
+}
+
+.base-dn {
+  font-family: monospace;
+  font-size: 14px;
+  color: #333;
+}
+
+.proceed-button {
+  display: block;
+  width: 100%;
+  background-color: #4285F4;
+  color: white;
+  border: none;
+  padding: 12px 24px;
+  border-radius: 4px;
+  font-size: 16px;
+  font-weight: 500;
+  cursor: pointer;
+  transition: background-color 0.2s;
+}
+
+.proceed-button:hover {
+  background-color: #357AE8;
+}
