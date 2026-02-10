@@ -17,6 +17,10 @@ export default function TrustDiagram({ data }) {
     const elements = [];
     const domains = new Set();
 
+    // Add local domain (assumed from connection)
+    const localDomain = 'contoso.com';
+    domains.add(localDomain);
+
     // Collect all domains from trusts
     data.trusts.forEach(trust => {
       domains.add(trust.name);
@@ -38,7 +42,7 @@ export default function TrustDiagram({ data }) {
       elements.push({
         data: {
           id: `trust_${index}`,
-          source: 'contoso.com', // Assuming local domain
+          source: localDomain,
           target: trust.name,
           label: trust.direction,
           type: 'trust'

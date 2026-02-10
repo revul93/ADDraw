@@ -30,15 +30,21 @@ export default function ReplicationDiagram({ data }) {
 
     // Add replication connections
     data.connections.forEach(conn => {
-      elements.push({
-        data: {
-          id: conn.id,
-          source: conn.from,
-          target: conn.to,
-          enabled: conn.enabled,
-          type: 'replication'
-        }
-      });
+      // Only add edges where both source and target nodes exist
+      const sourceExists = data.servers.some(s => s.id === conn.from);
+      const targetExists = data.servers.some(s => s.id === conn.to);
+      
+      if (sourceExists && targetExists) {
+        elements.push({
+          data: {
+            id: conn.id,
+            source: conn.from,
+            target: conn.to,
+            enabled: conn.enabled,
+            type: 'replication'
+          }
+        });
+      }
     });
 
     cyRef.current = cytoscape({
